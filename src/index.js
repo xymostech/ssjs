@@ -27,7 +27,12 @@ const createStyleSheet = (styles) => {
                     extend = styles[extend].extend;
                 }
 
-                classes[key] = css(...extensions, stylesheet[key]);
+                Object.defineProperty(classes, key, {
+                    enumerable: true,
+                    get() {
+                        return css(...extensions, stylesheet[key]);
+                    }
+                });
             });
         },
 
