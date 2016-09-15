@@ -1,0 +1,34 @@
+{
+  "name": "ssjs",
+  "version": "1.0.0",
+  "description": "A JSS-like API on top of Aphrodite",
+  "main": "dist/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "aphrodite": "^0.5.0"
+  },
+  "devDependencies": {
+    "asap": "^2.0.4",
+    "babel-core": "^6.14.0",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-preset-es2015": "^6.14.0",
+    "chai": "^3.5.0",
+    "jsdom": "^9.5.0",
+    "mocha": "^3.0.2"
+  },
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xymostech/ssjs.git"
+  },
+  "author": "Emily Eisenberg <xymostech@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xymostech/ssjs/issues"
+  },
+  "homepage": "https://github.com/xymostech/ssjs#readme"
+}
